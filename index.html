@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web design assignment week 5 </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="mainHeading">Welcome to Interactive DOM Manipulation</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#actions">Actions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <article>
+        <h2>What is the DOM?</h2>
+        <p>The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.</p>
+      </article>
+    </section>
+
+    <section id="actions">
+      <h2>Try It Out !!!!</h2>
+      <div class="control-group">
+        <button id="changeTextBtn">Change Heading</button>
+        <input type="text" id="headingInput" placeholder="Enter new heading"/>
+      </div>
+      <div class="control-group">
+        <button id="toggleBoxBtn">Toggle Box</button>
+        <label for="colorPicker">Box Color:</label>
+        <input type="color" id="colorPicker" value="#007BFF" />
+      </div>
+      <div id="box">A color box   </div>
+      <div id="dynamicContent"></div>
+    </section>
+
+    <section id="extras">
+      <h2>More...</h2>
+      <div class="control-group">
+        <input type="text" id="newItemInput" placeholder="Add list item" />
+        <button id="addItemBtn">Add Item</button>
+      </div>
+      <ul id="itemList"></ul>
+
+      <div class="control-group theme-toggle">
+        <label for="themeToggle">Dark Mode:</label>
+        <input type="checkbox" id="themeToggle" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Respect</p>
+  </footer>
+</body>
+</html>

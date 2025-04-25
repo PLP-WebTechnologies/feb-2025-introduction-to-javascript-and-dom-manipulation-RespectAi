@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-footer-bg: #333;
+    --header-footer-text: #fff;
+    --box-bg: #007BFF;
+    --box-text: #fff;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header, footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+  }
+  
+  nav ul li a {
+    color: var(--header-footer-text);
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  
+  .control-group {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  input[type="text"], input[type="color"] {
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  #box {
+    width: 150px;
+    height: 150px;
+    background-color: var(--box-bg);
+    color: var(--box-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    border-radius: 25px; 
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #itemList {
+    list-style: disc inside;
+    margin-top: 1rem;
+  }
+  
+  #itemList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+  }
+  
+  #itemList li button {
+    background: none;
+    color: red;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .theme-toggle {
+    margin-top: 1rem;
+  }
+  
+  .dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f4f4f4;
+    --header-footer-bg: #000;
+    --header-footer-text: #f4f4f4;
+  }
